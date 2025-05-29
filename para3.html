@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jayanth | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #000c18;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Hero Section with 3D Video */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .hero video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero h1 {
+      font-size: 64px;
+      animation: fadeInDown 1s ease-out;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-top: 15px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    /* Section Titles */
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #bdb2b2;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Tech Grid */
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .tech-tile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .tech-tile:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Projects Scroll */
+    .project-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding-top: 20px;
+      scrollbar-width: thin;
+    }
+    .project-card {
+      min-width: 300px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    /* Contact Section */
+    #contact a {
+      color: #004cff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+      .tech-tile {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* Hide scrollbars cross-browser */
+body, .project-scroll {
+  -ms-overflow-style: none;     /* IE and Edge */
+  scrollbar-width: none;        /* Firefox */
+}
+body::-webkit-scrollbar,
+.project-scroll::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Opera */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section with 3D video -->
+  <section class="hero">
+    <video autoplay loop muted id="bg-video" style="filter: brightness(0.4);">
+        <source src="https://videos.pexels.com/video-files/5680034/5680034-hd_1920_1080_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <script>
+        // Reduce video speed
+        document.addEventListener("DOMContentLoaded", function() {
+          const video = document.getElementById("bg-video");
+          video.playbackRate = 0.7; // Adjust between 0.1 (very slow) and 1 (normal)
+        });
+      </script>
+    <div class="hero-content">
+      <h1>Jayanth</h1>
+      <p>Full Stack Developer | Building Scalable Web Experiences</p>
+    </div>
+  </section>
+
+  
+
+  <!-- Technologies -->
+  <section class="container">
+    <h2>Technologies</h2>
+    <div class="tech-grid">
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="30"><span>HTML5</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="30"><span>CSS3</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="30"><span>JavaScript</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="30"><span>React</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="30"><span>Node.js</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="30"><span>Express</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="30"><span>MongoDB</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="30"><span>Python</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="30"><span>Git</span></div>
+      <div class="tech-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30"><span>GitHub</span></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="container">
+    <h2>Projects</h2>
+    <div class="project-scroll">
+      <div class="project-card"><h3>Project 1</h3><p>A cool project about AI or Web Dev.</p></div>
+      <div class="project-card"><h3>Project 2</h3><p>Creative eCommerce website.</p></div>
+      <div class="project-card"><h3>Project 3</h3><p>Data dashboard with React + D3.js</p></div>
+      <div class="project-card"><h3>Project 4</h3><p>Fullstack job portal platform.</p></div>
+      <div class="project-card"><h3>Project 5</h3><p>Mobile app for task management.</p></div>
+      <div class="project-card"><h3>Project 6</h3><p>Blog engine using Node & MongoDB.</p></div>
+      <div class="project-card"><h3>Project 7</h3><p>Portfolio site with animations.</p></div>
+      <div class="project-card"><h3>Project 8</h3><p>Social media mini clone.</p></div>
+      <div class="project-card"><h3>Project 9</h3><p>Weather app using API integration.</p></div>
+      <div class="project-card"><h3>Project 10</h3><p>Finance tracker with charts.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jayanth@mail.com">jayanth@mail.com</a></p>
+    <p>Phone: <a href="tel:+91934601195">934601195</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Jayanth. All rights reserved. | Built with ❤️ in HTML, CSS & JS
+  </footer>
+
+</body>
+</html>
