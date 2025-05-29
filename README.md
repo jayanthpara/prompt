@@ -19,13 +19,19 @@ I built this to:
 - Smooth, clean UI with **scrollbars hidden but scrollable by drag**
 - Dark blue theme for a sleek developer look
 
+🧠 para2.html generated using ChatGPT
+
+🌟 para.html created using Gemini AI
+
+🧬 para1.para produced with Claude AI
+
 ## 🚀 Built With
 
 - HTML5
 - CSS3 (no frameworks)
 - Font Awesome
 - Google Fonts
-- AI Assistant (ChatGPT)
+- AI Assistants (ChatGPT, Gemini, Claud)
 
 ## 🎯 Purpose
 
