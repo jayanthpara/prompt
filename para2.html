@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayanth's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* CSS */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      overflow: hidden;
+      transition: opacity 0.5s ease;
+    }
+
+    .background-video video {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container {
+      width: 100%;
+      padding: 80px 40px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      background-color: #1976d2;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 30px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: #0288d1;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    .project-card {
+      width: 300px;
+      height: 400px;
+      background-image: linear-gradient(45deg, #1976d2, #0288d1);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.5s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    .technology-item {
+      width: 120px;
+      height: 120px;
+      background-image: linear-gradient(45deg, #1976d2, #0288d1);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.5s;
+    }
+
+    .technology-item:hover {
+      transform: scale(1.1);
+    }
+
+    .technology-item i {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .technology-item p {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      color: #1976d2;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .contact a:hover {
+      color: #0288d1;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-video">
+    <video autoplay loop muted>
+      <source src="https://cdn.pixabay.com/video/2023/07/08/170655-843752693_large.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Welcome to Jayanth's Portfolio</h1>
+      <p>Explore my latest projects and discover my expertise.</p>
+      <a href="#" class="btn">View Projects</a>
+    </div>
+
+    <div class="projects">
+      <div class="project-card">
+        <h2>Project 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 6</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 7</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 8</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 9</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h2>Project 10</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="technologies">
+      <div class="technology-item">
+        <i class="fab fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-js-square"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-react"></i>
+        <p>React</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-node-js"></i>
+        <p>Node.js</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-aws"></i>
+        <p>AWS</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-python"></i>
+        <p>Python</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-java"></i>
+        <p>Java</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-git-alt"></i>
+        <p>Git</p>
+      </div>
+      <div class="technology-item">
+        <i class="fab fa-docker"></i>
+        <p>Docker</p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <p>Contact:</p>
+      <a href="mailto:jayanth@mail.com">jayanth@mail.com</a>
+      <p>Phone: 934601195</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript
+    window.addEventListener('scroll', function() {
+      var backgroundVideo = document.querySelector('.background-video');
+      var scrollPosition = window.pageYOffset;
+      var opacity = 1 - (scrollPosition / 500);
+
+      backgroundVideo.style.opacity = opacity;
+    });
+  </script>
+</body>
+</html>
